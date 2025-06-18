@@ -3,13 +3,15 @@ import { string } from 'prop-types';
 
 
 
-const ProductItem = (props) => {
+const ProductItem = ({name, price}) => {
 
 
   return (
-    <p>
-        {props.prodItem}
-    </p>
+    <>
+        <h3>{name}</h3>
+        <p>price: {price}</p>
+        {/* {props.prodItem} */}
+    </>
   );
 }
 

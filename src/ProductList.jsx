@@ -13,11 +13,18 @@ const ProductList = (props) => {
   return (
     <div>
         <p> 
-
-              <ProductItem prodItem= {props.prodList[0].productName}/>
+            <div>
+                {props.prodList.map(prod => (
+                <ProductItem
+                    name={prod.productName} 
+                    price={prod.Price} 
+                />
+                ))}
+            </div>
+              {/* <ProductItem prodItem= {props.prodList[0].productName}/>
               <ProductItem prodItem= {props.prodList[1].productName}/>
               <ProductItem prodItem= {props.prodList[2].productName}/>
-              <ProductItem prodItem= {props.prodList[3].productName}/>
+              <ProductItem prodItem= {props.prodList[3].productName}/> */}
 
         </p>
         <span>I love <u>bad</u>boy</span>
