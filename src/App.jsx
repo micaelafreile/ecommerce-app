@@ -4,16 +4,19 @@ import './App.css';
 
 function App() {
   const [products] = useState([
-    { id: 1, name: 'T-Shirt', price: 25, description: 'Comfy cotton shirt' },
-    { id: 2, name: 'Sneakers', price: 60, description: 'Lightweight and stylish' },
-    { id: 3, name: 'Jeans', price: 45, description: 'Slim fit denim' }
+    { id: 1, name: 'General Admission', price: 100, description: 'Basic Access' },
+    { id: 2, name: 'Pit', price: 200, description: 'Closest you can get to the stage' },
+    { id: 3, name: 'VIP', price: 300, description: 'Total access' }
   ]);
 
   return (
     <div>
       <h1>Product Listing</h1>
       <ProductList prodList={products} />
+      <div className="app-container"></div>
     </div>
+
+    
   );
 }
 
