@@ -6,14 +6,13 @@ function App() {
   const [products] = useState([
     { id: 1, name: 'General Admission', price: 100, description: 'Basic Access' },
     { id: 2, name: 'Pit', price: 200, description: 'Closest you can get to the stage' },
-    { id: 3, name: 'VIP', price: 300, description: 'Total access' }
+    { id: 3, name: 'VIP', price: 300, description: 'Total' }
   ]);
 
   return (
-    <div>
+    <div className="app-container">
       <h1>Product Listing</h1>
-      <ProductList prodList={products} />
-      <div className="app-container"></div>
+      <ProductList prodList={products}  />
     </div>
 
     

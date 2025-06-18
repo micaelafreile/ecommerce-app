@@ -1,6 +1,6 @@
 function ProductItem({ name, price, description }) {
   return (
-    <div style={{ border: '1px solid #ccc', margin: '1rem', padding: '1rem' }}>
+    <div style={{ border: '1px solid #ccc', margin: '1rem', padding: '1rem' }} className="product-item">
       <h3>{name}</h3>
       <p><strong>Price:</strong> ${price}</p>
       <p>{description}</p>
